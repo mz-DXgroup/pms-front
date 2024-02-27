@@ -4,11 +4,13 @@
     <div>
       <h4 class="mt-3 ms-3">
         개인이력카드 조회
-        <button @click="toggleEditMode" class="btn btn-primary">정보 수정</button>
+        <button class="btn btn-primary">
+          <router-link to="/edit" class="link">정보 수정</router-link>
+        </button>
       </h4>
     </div>
     <div class="card mt-3 ms-3 me-3">
-      <h5 class="card-header">기본정보</h5>
+      <div class="card-header bg-secondary fw-bold">기본정보</div>
       <div class="card-body">
         <table class="table">
           <tr>
@@ -50,7 +52,7 @@
         </table>
       </div>
     </div>
-    
+
     <div class="card mt-3 ms-3 me-3">
       <h5 class="card-header">수행경력</h5>
       <div class="card-body">
@@ -71,18 +73,13 @@
 
 <script>
 import TopbarView from "@/components/common/TopbarView.vue";
-import { ref } from "vue";
 
 export default {
   setup() {
-    const isEditing = ref(false);
 
-    return { isEditing };
+    return {  };
   },
   methods: {
-    toggleEditMode() {
-
-    },
   },
   components: {
     TopbarView,
@@ -90,4 +87,9 @@ export default {
 };
 </script>
 
-<style scoped> </style>
+<style scoped>
+.link {
+  text-decoration: none;
+  color: white;
+}
+</style>

@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'mypage',
       component: () => import('../views/MypageView.vue')
     },
+    {
+      path: '/edit',
+      name: 'mypageedit',
+      component: () => import('../views/MypageEditView.vue')
+    },
   ]
 })
 
