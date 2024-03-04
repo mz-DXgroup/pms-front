@@ -17,9 +17,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="/"
-                >홈</a
-              >
+              <a class="nav-link active text-white" aria-current="page" href="/home">홈</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="/mypage">내 정보</a>
@@ -30,8 +28,7 @@
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+                aria-expanded="false">
                 프로젝트
               </a>
               <ul class="dropdown-menu">
@@ -51,8 +48,7 @@
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+                aria-expanded="false">
                 거래처
               </a>
               <ul class="dropdown-menu">
